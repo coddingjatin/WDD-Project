@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Add from './Add';
 import Subtraction from './subtraction';
+import Mult from './mult';
+import Division from './division';
 
 let Calculator = () => {
     const [num1, setNum1] = useState(0);
@@ -32,6 +34,8 @@ let Calculator = () => {
             <div className="space-y-4">
                 <Add numbers={numbers}/>
                 <Subtraction numbers={numbers}/>
+                <Mult numbers={numbers}/>
+                <Division numbers={numbers}/>
             </div>
         </div>
     </div>
